@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1>Technical Documentation</h1>
+        <a href="#HTML_Overview" class="nav-link">HTML Overview</a>
+        <a href="#CSS_Overview" class="nav-link">CSS Overview</a>
+        <a href="#JavaScript_Overview" class="nav-link">JavaScript Overview</a>
+        <a href="#Git_Overview" class="nav-link">Git Overview</a>
+        <a href="#Responsive_Design" class="nav-link">Responsive Design</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="HTML_Overview">
+            <header>
+                <h2>HTML Overview</h2>
+            </header>
+            <p>HTML stands for Hypertext Markup Language. HTML is the standard language for creating web pages.</p>
+            <p>HTML describes the structure of a webpage using markup.</p>
+            <code>&lt;html&gt;...&lt;/html&gt;</code>
+            <p>HTML elements are represented by tags.</p>
+            <ul>
+                <li>Paragraph: <code>&lt;p&gt;...&lt;/p&gt;</code></li>
+                <li>Header: <code>&lt;h1&gt;...&lt;/h1&gt;</code></li>
+                <li>Link: <code>&lt;a href="... "&gt;...&lt;/a&gt;</code></li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="CSS_Overview">
+            <header>
+                <h2>CSS Overview</h2>
+            </header>
+            <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen.</p>
+            <p>The primary purpose of CSS is to style web pages.</p>
+            <code>color: blue;</code>
+            <p>CSS can control the layout of multiple web pages all at once.</p>
+            <ul>
+                <li>Selectors: <code>h1 { color: red; }</code></li>
+                <li>Classes: <code>.classname { ... }</code></li>
+                <li>IDs: <code>#idname { ... }</code></li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="JavaScript_Overview">
+            <header>
+                <h2>JavaScript Overview</h2>
+            </header>
+            <p>JavaScript is a programming language used to make web pages interactive.</p>
+            <p>It can update and change both HTML and CSS.</p>
+            <code>console.log("Hello, world!");</code>
+            <p>JavaScript can also be used to create animations.</p>
+            <ul>
+                <li>Variables: <code>let x = 5;</code></li>
+                <li>Functions: <code>function myFunction() { ... }</code></li>
+                <li>Events: <code>element.addEventListener('click', function() { ... });</code></li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Git_Overview">
+            <header>
+                <h2>Git Overview</h2>
+            </header>
+            <p>Git is a version control system that lets you manage and keep track of your source code history.</p>
+            <p>Git allows multiple developers to work on the same project without interfering with each other's work.</p>
+            <code>git commit -m "commit message"</code>
+            <p>It also allows you to revert to previous versions of your code.</p>
+            <ul>
+                <li>Clone repository: <code>git clone ...</code></li>
+                <li>Add changes: <code>git add .</code></li>
+                <li>Push changes: <code>git push origin master</code></li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Responsive_Design">
+            <header>
+                <h2>Responsive Design</h2>
+            </header>
+            <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on various devices.</p>
+            <p>RWD uses fluid grids, flexible images, and media queries.</p>
+            <code>@media (max-width: 600px) { ... }</code>
+            <p>It ensures that users have a good experience on any device, whether desktop, tablet, or mobile phone.</p>
+            <ul>
+                <li>Media Queries: <code>@media screen and (min-width: 600px) { ... }</code></li>
+                <li>Fluid Grids: Use percentage instead of fixed units.</li>
+                <li>Flexbox/Grid Layout: For responsive layout management.</li>
+            </ul>
+        </section>
+    </main>
+
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        #navbar {
+            background-color: #e6e6e6;
+            padding: 20px;
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            border-right: 1px solid #ccc;
+        }
+
+        #navbar h1 {
+            font-size: 22px;
+            margin: 0 0 20px 0;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        #navbar .nav-link {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        #navbar .nav-link:hover {
+            background-color: #ddd;
+        }
+
+        #main-doc {
+            margin-left: 270px;
+            padding: 40px;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+        }
+
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        .main-section header h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 600px) {
+            #navbar {
+                position: static;
+                width: 100%;
+                height: auto;
+            }
+
+            #main-doc {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</body>
+</html>
